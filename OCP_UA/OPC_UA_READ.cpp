@@ -51,14 +51,14 @@ const SFBInterfaceSpec FORTE_OPC_UA_READ::scm_stFBInterfaceSpec = {
 void FORTE_OPC_UA_READ::executeEvent(int pa_nEIID){
   switch(pa_nEIID){
     case scm_nEventREQID:
-        UA_Client *client = UA_Client_new(UA_ClientConfig_standard, Logger_Stdout_new());
-        UA_StatusCode retval = UA_Client_connect(client, ClientNetworkLayerTCP_connect, "opc.tcp://localhost:16664");
-        if(retval != UA_STATUSCODE_GOOD) {
-            UA_Client_delete(client);
-        }
-
-        UA_Client_disconnect(client);
-        UA_Client_delete(client);
+//        UA_Client *client = UA_Client_new(UA_ClientConfig_standard, Logger_Stdout_new());
+//        UA_StatusCode retval = UA_Client_connect(client, ClientNetworkLayerTCP_connect, "opc.tcp://localhost:16664");
+//        if(retval != UA_STATUSCODE_GOOD) {
+//            UA_Client_delete(client);
+//        }
+//
+//        UA_Client_disconnect(client);
+//        UA_Client_delete(client);
 
      sendOutputEvent(scm_nEventCNFID);
 
