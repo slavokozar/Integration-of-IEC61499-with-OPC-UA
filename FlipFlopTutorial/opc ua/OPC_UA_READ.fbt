@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE FBType SYSTEM "http://www.holobloc.com/xml/LibraryElement.dtd">
+<FBType Comment="Read value from OPC UA server" Name="OPC_UA_READ">
+  <Identification Function="Reader" Standard="OPC UA"/>
+  <VersionInfo Author="Slavomir Kozar" Date="2015-11-08" Organization="Certicon" Version="1.0"/>
+  <InterfaceList>
+    <EventInputs>
+      <Event Comment="Normal Execution Request" Name="REQ" Type="Event">
+        <With Var="SERVER"/>
+        <With Var="NODE"/>
+      </Event>
+    </EventInputs>
+    <EventOutputs>
+      <Event Comment="Execution Confirmation" Name="CNF" Type="Event">
+        <With Var="OUT"/>
+      </Event>
+    </EventOutputs>
+    <InputVars>
+      <VarDeclaration Comment="OPC UA server address:port" Name="SERVER" Type="WSTRING"/>
+      <VarDeclaration Comment="UPC UA Node ID" Name="NODE" Type="WSTRING"/>
+    </InputVars>
+    <OutputVars>
+      <VarDeclaration Comment="Readed data" Name="OUT" Type="INT"/>
+    </OutputVars>
+  </InterfaceList>
+</FBType>

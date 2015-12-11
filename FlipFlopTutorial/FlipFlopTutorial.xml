@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<libraryElement:AutomationSystem xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:libraryElement="org.fordiac.ide.model.libraryElement" name="FlipFlopTutorial" id="_9wGcQGoaEeWW8tiukAjpgw">
+  <versionInfo author="Author" organization="4DIAC-Consortium" version="1.0"/>
+  <identification/>
+  <application comment="" name="FlipFlopApplication">
+    <fBNetwork href="FlipFlopApplication.xml#//@fbNetwork"/>
+  </application>
+  <systemConfiguration>
+    <systemConfigurationNetwork href="SysConf.xml#//@systemConfigNetwork"/>
+  </systemConfiguration>
+</libraryElement:AutomationSystem>
