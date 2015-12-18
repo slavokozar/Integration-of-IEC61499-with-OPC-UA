@@ -5,8 +5,8 @@ forte_add_module(OPC_UA "OCP Unified Architecture Function Blocks")
 #############################################################################
 forte_add_include_directories(${CMAKE_CURRENT_SOURCE_DIR})
 
-forte_add_sourcefile_hcpp(OPC_UA_READ)
-forte_add_sourcefile_hcpp(OPC_UA_WRITE)
+forte_add_sourcefile_hcpp(OPC_UA_PUBLISH)
+
 
 
 if("${FORTE_ARCHITECTURE}" STREQUAL "Posix")

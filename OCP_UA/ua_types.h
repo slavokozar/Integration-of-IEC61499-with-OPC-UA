@@ -156,7 +156,7 @@ typedef struct {
 
 /* Forward Declaration of UA_DataType */
 struct UA_DataType;
-typedef struct UA_DataType UA_DataType; 
+typedef struct UA_DataType UA_DataType;
 
 /* NumericRanges are used select a subset in a (multidimensional) variant array.
  * NumericRange has no official type structure in the standard. On the wire, it
@@ -568,7 +568,7 @@ UA_StatusCode UA_EXPORT UA_Variant_copy(const UA_Variant *src, UA_Variant *dst);
  * @return Does the variant contain a scalar value.
  */
 UA_Boolean UA_EXPORT UA_Variant_isScalar(const UA_Variant *v);
-    
+
 /**
  * Set the variant to a scalar value that already resides in memory. The value takes on the
  * lifecycle of the variant and is deleted with it.
@@ -690,7 +690,7 @@ typedef struct {
                                        members from the same namespace or ns0 only.*/
     UA_Boolean isArray : 1; ///< The member is an array of the given type
 } UA_DataTypeMember;
-    
+
 struct UA_DataType {
 #ifdef ENABLE_TYPEINTROSPECTION
     const char *typeName;
